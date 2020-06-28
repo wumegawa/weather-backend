@@ -15,5 +15,5 @@ On your local development environment (make sure that you're running this comman
 `localhost` name to a correct IP address, and that TCP port 8177 is reachable on the target machine):
 
 ```
-curl http://localhost:8177/api/v1/; echo
+curl http://localhost:8177/api/v1/
 ```
