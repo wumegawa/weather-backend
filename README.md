@@ -1,10 +1,10 @@
-# Weather Backend (Node,js)
+# Weather Backend (Node.js)
 
 ## Build & run server
 
 ```
 cd weather-backend
-cp .env.example .env
+cp .env.sample .env
 # Adjust the settings in the `.env` file manually if needed
 make restart
 ```
