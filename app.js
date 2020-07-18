@@ -11,6 +11,13 @@ app.use(bodyParser.json());
 // port番号を指定
 var port = process.env.NODEJS_TCP_PORT || 3000;
 
+// CORSを許可する
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 // GET http://localhost:3000/api/v1/
 app.get('/api/v1/',function(req,res){
     res.json({
